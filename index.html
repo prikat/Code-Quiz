@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Quiz Game</title>
+</head>
+<body>
+    <div class="scores">View Highscores</div>
+    <div class="timer float-right">Time: <span id="time">75</span></div>
+<!-- Main content -->
+    <div class="container">
+        <div id="start-div" class="first">
+            <h1>Coding Quiz</h1>
+            <p>
+                Take the following quiz and test your knowledge with code-related questions. You will be working to a time limit and incorrect answers will penalize your time by 15 seconds. This quiz consists of 5 questions, if you finish the quiz with time left on the clock, the remaining time will be saved as your score. No score will be saved if time limit reaches 0. Good luck!
+            </p>
+            <button id="start">Let's Do it!!</button>
+        </div>
+        <div id="question1">
+            <h2 class="question-header">Commonly used data types DO NOT include ____:
+            </h2>
+            <div class="question-options1">
+                <button class = "wrong1">Strings</button><br> 
+                <button class = "wrong1">Booleans</button><br>
+                <button class = "wrong1">Numbers</button><br>
+                <button id = "right1">Alerts</button><br>
+            </div>
+        </div>
+        <div id="question2">
+            <h2 class="question-header">The condition of if/else statements need to be enclosed within ____:
+            </h2>
+            <div class="question-options2">
+                <button id = "right2">Parenthesis</button><br> 
+                <button class = "wrong2">Curly Brackets</button><br>
+                <button class = "wrong2">Square Brackets</button><br>
+                <button class = "wrong2">Quotations</button><br>
+            </div>
+        </div>
+        <div id="question3">
+            <h2 class="question-header">Arrays in Javascript can be used to store ____:
+            </h2>
+            <div class="question-options3">
+                <button class = "wrong3">Numbers and strings</button><br> 
+                <button class = "wrong3">Booleans</button><br>
+                <button class = "wrong3">Other Arrays</button><br>
+                <button id = "right3">All of the above</button><br>
+            </div>
+        </div>
+        <div id="question4">
+            <h2 class="question-header">String values must be enclosed within ____ when being assigned to variables:
+            </h2>
+            <div class="question-options4">
+                <button class = "wrong4">Commas</button><br> 
+                <button class = "wrong4">Curly brackets</button><br>
+                <button id = "right4">Quotations</button><br>
+                <button class = "wrong4">Parenthesis</button><br>
+            </div>
+        </div>
+        <div id="question5">
+            <h2 class="question-header">A very useful tool used during debugging and development for printing conent to the debugger is ____:
+            </h2>
+            <div class="question-options5">
+                <button class = "wrong5">Javascript</button><br> 
+                <button id = "right5">console.log</button><br>
+                <button class = "wrong5">For loops</button><br>
+                <button class = "wrong5">Git Bash</button><br>
+            </div>
+        </div>
+
+        <div id="right-answer" class="greyText">
+            <h5>You are right!!!</h5>
+        </div>
+        <div id="wrong-answer" class="greyText">
+            <h5>Wrong!!!</h5>
+        </div>
+
+        <div id="game-over" class="hide">
+            <h2>Game Over!</h2>
+            <p>Final score: <span id="score"></span></p>
+            <p>Initials: <input type="text" id = "initials"></p>
+            <button id="submit">Submit</button>
+            <button id="play-again">Play Again</button>
+        </div>
+
+        <div id="results">
+            <h2>Top 5 High Scores</h2>
+            <ul id="high-score-div">
+                <!-- Score places -->
+                <h4 id="first-place"></h4>
+                <h4 id="second-place"></h4>
+                <h4 id="third-place"></h4>
+                <h4 id="fourth-place"></h4>
+                <h4 id="fifth-place"></h4>
+            </ul>
+        </div>
+        <div id="go-main-div"><button id="go-main">Back to main page.</button></div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

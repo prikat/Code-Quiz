@@ -1,0 +1,58 @@
+.container  {
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+    background-color: ivory;
+    border-radius: 8px;
+    margin-top: 120px;
+    padding: 20px;
+}
+
+body {
+    background-image: url(https://img.freepik.com/free-vector/abstract-technology-particle-background_52683-25766.jpg?size=626&ext=jpg);
+    background-size: cover;
+
+}
+.scores {
+    float: left;
+    color: rgb(71, 71, 87);
+    background-color: white;
+    padding: 10px;
+}
+
+.float-right {
+    float: right;
+    color: rgb(71, 71, 87);
+    background-color: white;
+    padding: 10px;
+}
+p {
+    font-size: 18px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(121, 113, 121);
+    font-weight: bold;
+}
+button {
+    margin: 3px;
+    outline: none;
+    border-radius: 10px;
+    background-color: indigo;
+    color: white;
+    padding: 10px;
+    width: 25%;
+}
+
+button:hover {
+    background-color: rgb(214, 102, 51);
+}
+
+li {
+    height: 20px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 5px;
+    background-color: indigo;
+    color: white;
+    font-size: 1.5em;
+    line-height: 1.5;
+}
